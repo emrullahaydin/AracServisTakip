@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracServisTakip", "AracServisTakip.csproj", "{9CE5B86B-776B-4724-BE18-F1856146F9ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CE5B86B-776B-4724-BE18-F1856146F9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE5B86B-776B-4724-BE18-F1856146F9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE5B86B-776B-4724-BE18-F1856146F9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE5B86B-776B-4724-BE18-F1856146F9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {309F7165-2B9F-446D-B697-7A047F746475}
+	EndGlobalSection
+EndGlobal

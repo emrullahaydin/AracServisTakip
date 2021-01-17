@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CE5B86B-776B-4724-BE18-F1856146F9ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracServisTakip</RootNamespace>
+    <AssemblyName>AracServisTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_maintenance.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.CodeCompletion, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Service, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglan.cs" />
+    <Compile Include="csKontrol\Kontrol.cs" />
+    <Compile Include="firmaBilgileri.cs" />
+    <Compile Include="frmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaServisIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaServisIslemleri.Designer.cs">
+      <DependentUpon>frmAnaServisIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcelAktar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcelAktar.Designer.cs">
+      <DependentUpon>frmExcelAktar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriFirmaAracListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriFirmaAracListesi.Designer.cs">
+      <DependentUpon>frmMusteriFirmaAracListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServisIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServisIslemleri.Designer.cs">
+      <DependentUpon>frmServisIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirmaBilgisiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirmaBilgisiDuzenle.Designer.cs">
+      <DependentUpon>frmFirmaBilgisiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriKayit.Designer.cs">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServisPersoneliKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServisPersoneliKayit.Designer.cs">
+      <DependentUpon>frmServisPersoneliKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokIslemleri\frmStokKartiDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokIslemleri\frmStokKartiDetay.Designer.cs">
+      <DependentUpon>frmStokKartiDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokIslemleri\frmStokKartlariListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokIslemleri\frmStokKartlariListesi.Designer.cs">
+      <DependentUpon>frmStokKartlariListesi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaServisIslemleri.resx">
+      <DependentUpon>frmAnaServisIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcelAktar.resx">
+      <DependentUpon>frmExcelAktar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriFirmaAracListesi.resx">
+      <DependentUpon>frmMusteriFirmaAracListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriKayit.resx">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServisIslemleri.resx">
+      <DependentUpon>frmServisIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirmaBilgisiDuzenle.resx">
+      <DependentUpon>frmFirmaBilgisiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServisPersoneliKayit.resx">
+      <DependentUpon>frmServisPersoneliKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StokIslemleri\frmStokKartiDetay.resx">
+      <DependentUpon>frmStokKartiDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokIslemleri\frmStokKartlariListesi.resx">
+      <DependentUpon>frmStokKartlariListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_maintenance.ico" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\exporttoxlsx_32x32.png" />
+    <None Include="Resources\refresh_32x32.png" />
+    <None Include="Resources\edit_32x321.png" />
+    <None Include="Resources\trash_32x321.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\exporttoxls_32x32.png" />
+    <None Include="Resources\report_32x32.png" />
+    <None Include="Resources\mail_32x32.png" />
+    <None Include="Resources\trash_32x32.png" />
+    <None Include="Resources\edit_32x32.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\cancel_32x321.png" />
+    <None Include="Resources\apply_32x321.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
